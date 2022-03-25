@@ -9,10 +9,10 @@ import 'bootswatch/dist/lux/bootstrap.css'
 const Layout = ({title, description, children}) => {
     return ( 
         <>
-        <Helmet>
+        {/* <Helmet>
             <title>{ title ? title + " - React Boilerplate" : "React.js Boilerplate" }</title>
             <meta name = "description" content={ description || "React.js Boilerplate" } />
-        </Helmet>
+        </Helmet> */}
         <Header/>
         <main className="container">
             {children}

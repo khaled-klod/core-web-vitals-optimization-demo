@@ -9,7 +9,6 @@ import { formatNumber } from '../../helpers/utils';
 const Cart = () => {
 
     const { total, cartItems, itemCount, clearCart, checkout, handleCheckout } = useCart();
-    
     return ( 
         <Layout title="Cart" description="This is the Cart page" >
             <div >

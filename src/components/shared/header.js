@@ -5,7 +5,6 @@ import {CartIcon} from '../icons';
 import styles from './header.module.scss';
 
 const Header = () => {
-
     const {itemCount} = useContext(CartContext);
 
     return ( 
