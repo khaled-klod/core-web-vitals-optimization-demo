@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && compress-cra",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "NODE_ENV=production node server/bootstrap.js"
@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "compress-create-react-app": "^1.2.1",
     "sass": "^1.49.9"
   }
 }

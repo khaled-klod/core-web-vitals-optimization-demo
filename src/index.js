@@ -3,13 +3,11 @@ import ReactDOM from "react-dom";
 import Routes from "./routes";
 import * as serviceWorker from "./serviceWorker";
 import Loadable from "react-loadable";
-import { HelmetProvider } from "react-helmet-async";
 import ProductsContextProvider from "./contexts/ProductsContext";
 import CartContextProvider from "./contexts/CartContext";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const AppBundle = (
-  <HelmetProvider context={{}}>
     <ProductsContextProvider>
       <CartContextProvider>
         <Router>
@@ -17,7 +15,6 @@ const AppBundle = (
         </Router>
       </CartContextProvider>
     </ProductsContextProvider>
-  </HelmetProvider>
 );
 
 window.onload = () => {
