@@ -7,3 +7,4 @@ fs.readdirSync(directory).forEach(file => {
     .resize(200, 200)
     .toFile(`${directory}/small-${file}`);
   });
+  
