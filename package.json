@@ -23,11 +23,13 @@
     "react-loadable": "^5.3.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "sharp": "^0.30.3",
     "url-loader": "^4.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "craco start",
+    "build:images": "node sharp.js",
     "build": "craco build && compress-cra",
     "test": "craco test",
     "eject": "craco eject",
