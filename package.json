@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/register": "^7.17.0",
+    "@craco/craco": "^5.8.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -26,10 +27,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && compress-cra",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "craco start",
+    "build": "craco build && compress-cra",
+    "test": "craco test",
+    "eject": "craco eject",
     "server": "NODE_ENV=production node server/bootstrap.js"
   },
   "eslintConfig": {
@@ -48,7 +49,9 @@
     ]
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "compress-create-react-app": "^1.2.1",
+    "postcss": "^8.4.12",
     "sass": "^1.49.9"
   }
 }
